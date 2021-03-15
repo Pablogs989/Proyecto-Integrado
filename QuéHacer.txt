@@ -1,0 +1,42 @@
+- CAMARERO
+- Introducir contraseña
+   - Para llevar
+      - Nombre
+      - Núm. Tlf.
+      - Hacer pedido
+         - Pizzas
+         - Entrantes
+         - Bebidas
+         - Postres
+   - Para domicilio	
+      - Núm. tlf.
+      - Nombre
+      - Calle
+      - Núm. portal
+      - Escalera OPCIONAL
+      - Piso
+      - Puerta
+      - Hacer pedido
+         - Pizzas
+         - Entrantes
+         - Bebidas
+         - Postres
+   - Para sala
+      - Mesa
+      - Hacer pedido
+         - Pizzas
+         - Entrantes
+         - Bebidas
+         - Postres
+   - Ver pedido
+       - Núm. pedido
+          - Ver
+          - Modificar
+          - Cancelar
+   - Cerrar pedido pagado
+      - Lista de pedidos
+      - Seleccionar el pedido pagado y desaparece de la lista
+
+- COCINA
+   - Ver lista pedidos (Se desplaza con flecha arriba/abajo)
+   - Sacar de la lista pedido realizados (Pulsando enter)
