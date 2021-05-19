@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD7B07F4-3BEB-4678-AA51-C20D4DEF85E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TOP_Manage</RootNamespace>
+    <AssemblyName>TOP_Manage</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.24.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="CodigoDescuento.cs" />
+    <Compile Include="ConexionBD.cs" />
+    <Compile Include="Empleado.cs" />
+    <Compile Include="FormContrasenya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContrasenya.Designer.cs">
+      <DependentUpon>FormContrasenya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPostres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPostres.Designer.cs">
+      <DependentUpon>FormPostres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBebidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBebidas.Designer.cs">
+      <DependentUpon>FormBebidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntrantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEntrantes.Designer.cs">
+      <DependentUpon>FormEntrantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPizzas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPizzas.Designer.cs">
+      <DependentUpon>FormPizzas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAcabarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAcabarPedido.Designer.cs">
+      <DependentUpon>FormAcabarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCocina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCocina.Designer.cs">
+      <DependentUpon>FormCocina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVerPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVerPedido.Designer.cs">
+      <DependentUpon>FormVerPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResumenPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResumenPedido.Designer.cs">
+      <DependentUpon>FormResumenPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCerrarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCerrarPedido.Designer.cs">
+      <DependentUpon>FormCerrarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLlevar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLlevar.Designer.cs">
+      <DependentUpon>FormLlevar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDomicilio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDomicilio.Designer.cs">
+      <DependentUpon>FormDomicilio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMesa.Designer.cs">
+      <DependentUpon>FormMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductos.Designer.cs">
+      <DependentUpon>FormProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LineaPedido.cs" />
+    <Compile Include="Mesa.cs" />
+    <Compile Include="Pedido.cs" />
+    <Compile Include="Producto.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tipo.cs" />
+    <Compile Include="Utilidades.cs" />
+    <EmbeddedResource Include="FormContrasenya.resx">
+      <DependentUpon>FormContrasenya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPostres.resx">
+      <DependentUpon>FormPostres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBebidas.resx">
+      <DependentUpon>FormBebidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntrantes.resx">
+      <DependentUpon>FormEntrantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPizzas.resx">
+      <DependentUpon>FormPizzas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAcabarPedido.resx">
+      <DependentUpon>FormAcabarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCocina.resx">
+      <DependentUpon>FormCocina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVerPedido.resx">
+      <DependentUpon>FormVerPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResumenPedido.resx">
+      <DependentUpon>FormResumenPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCerrarPedido.resx">
+      <DependentUpon>FormCerrarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLlevar.resx">
+      <DependentUpon>FormLlevar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDomicilio.resx">
+      <DependentUpon>FormDomicilio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMesa.resx">
+      <DependentUpon>FormMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductos.resx">
+      <DependentUpon>FormProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall223.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha-izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha-correcta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iniciar-sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iniciar-sesion %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iniciar-sesion %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correcto %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proximo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-de-encendido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-05-12 at 16.28.36.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
